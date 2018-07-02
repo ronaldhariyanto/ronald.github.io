@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'ronaldhariyanto',
+    title: 'ronaldhariyanto.github.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'My Personal Website' }
+      { hid: 'description', name: 'description', content: 'personal site' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -24,8 +24,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,

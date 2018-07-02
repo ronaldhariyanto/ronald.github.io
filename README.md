@@ -1,6 +1,6 @@
 # ronaldhariyanto.github.io
 
-> My Personal Website
+> personal site
 
 ## Build Setup
 
